@@ -10,18 +10,17 @@
             width: 100%;
             height: 100vh;
             overflow: hidden;
-            /* Resmin kesilmesini önlemek için siyah arka plan ekledik */
-            background-color: #000; 
+            background-color: #000;
             /* Senin İtachi anime gif linkin */
             background-image: url('https://xatimg.com/image/aPFwZw74kjQV.gif');
-            /* Görseli kırpmadan, orijinal oranlarıyla ekrana tam sığdırır */
-            background-size: contain;
+            /* YANLARDAKİ BOŞLUKLARI SİLMEK İÇİN DEĞİŞEN AYARLAR: */
+            background-size: 100% 100%; /* Gifi sağdan sola ve yukarıdan aşağıya ekrana tam oturtur */
             background-position: center;
             background-repeat: no-repeat;
         }
     </style>
 </head>
 <body>
-    <!-- Sadece kusursuz sığdırılmış anime gifi oynayacak -->
+    <!-- Yanlarda hiçbir siyah boşluk kalmadan tam ekran oynayacak -->
 </body>
 </html>
