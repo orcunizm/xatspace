@@ -1,95 +1,71 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XatSpace</title>
-    <style>
-        /* Tüm sayfayı kaplayan arka plan ayarları /
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('https://xatimg.com/image/vYGE2RjJUo9C.gif'); / Uzay Temalı Arka Plan /
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+<html>
+<div class="title">
+ <h1>xat.<br/>com</h1>
+</div>
+<style>
+   
+}
 
-        / Profil Kartı Kutusu /
-        .profile-container {
-            background: rgba(0, 0, 0, 0.65); / Şeffaf siyah arka plan /
-            backdrop-filter: blur(10px); / Arkadaki resmi bulandırma efekti /
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 0 25px rgba(0, 150, 255, 0.5); / Mavi parlama efekti /
-            max-width: 400px;
-            width: 100%;
-        }
+body {
+  height: 100%;
+}
+body {
+ background: rgb(57,223,202);
+background: radial-gradient(circle, rgba(57,223,202,1) 0%, rgba(17,143,203,1) 100%);
+};
+  min-height: 100%;
+  overflow: hidden;
+}
 
-        / Profil Resmi /
-        .avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            border: 3px solid #00d2ff;
-            box-shadow: 0 0 15px #00d2ff;
-            object-fit: cover;
-        }
 
-        / Başlıklar /
-        h1 {
-            margin: 15px 0 5px 0;
-            font-size: 24px;
-            color: #00d2ff;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
-        }
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+	background-color: #111;
+}
 
-        p {
-            font-size: 14px;
-            color: #cccccc;
-            line-height: 1.6;
-        }
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	letter-spacing: 1px;
+}
 
-        / Durum Yazısı (Örn: Antares) */
-        .status {
-            display: inline-block;
-            background: rgba(0, 210, 255, 0.2);
-            color: #00d2ff;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-top: 10px;
-            text-transform: uppercase;
-        }
-    </style>
-</head>
-<body>
+h1 {
+	background-image: url(https://xatimg.com/image/fFPGX21ITsYT.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
 
-    <div class="profile-container">
-        <!-- Profil Resmi (Kendininkini koyabilirsin) -->
-        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=200" alt="Avatar" class="avatar">
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
 
-        <!-- İsmin -->
-        <h1>Orcun</h1>
+.white-mode:hover {
+	background-color: #000;
+	color: #000;
+}
+</style>
 
-        <!-- Durum veya Oda Adı -->
-        <div class="status">Antares</div>
-
-        <!-- Hakkında Yazısı -->
-        <p>Xatspace profilime hoş geldiniz! GitHub Pages ile barındırılan özel CSS ve HTML tasarımı.</p>
-    </div>
-
-</body>
 </html>
