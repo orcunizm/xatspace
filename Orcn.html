@@ -6,21 +6,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-        /* İlk başta görünecek arka plan (Karanlık Tema) */
+        /* Tüm ekranı kaplayan anime GIF arka plan ayarları */
         body {
             margin: 0;
             padding: 0;
-            background-color: #111;
-            height: 100vh;
-            overflow: hidden;
-            transition: background 0.8s ease-in-out; /* Geçiş yumuşatma */
+            background-image: url('https://xatimg.com/image/vYGE2RjJUo9C.gif'); /* Senin anime GIF linkin */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* Başlık Alanı - Ekranı kaplar */
+        /* Başlık Alanı - Yazıyı ekrana ortalar */
         .title {
             font-family: "Montserrat";
             text-align: center;
@@ -31,11 +30,12 @@
             justify-content: center;
             height: 100vh;
             letter-spacing: 1px;
-            cursor: pointer; /* Tıklanabilir olduğunu belli eder */
             user-select: none;
+            /* Arka plandaki GIF'in daha net seçilebilmesi için yazının arkasına çok hafif şeffaf bir karanlık katman ekler */
+            background: rgba(0, 0, 0, 0.2); 
         }
 
-        /* İçinde GIF dönen havalı dev yazı */
+        /* İçinde maskeli GIF dönen havalı dev yazı */
         h1 {
             background-image: url(https://xatimg.com/image/fFPGX21ITsYT.gif);
             background-size: cover;
@@ -51,20 +51,10 @@
 </head>
 <body>
 
-    <!-- Avatar falan tamamen kaldırıldı, sadece bu yazıya tıklanacak -->
-    <div class="title" onclick="aktifEtAnimeSpace()">
+    <!-- Profilde sadece bu havalı yazı görünecek, avatar veya kutu olmayacak -->
+    <div class="title">
         <h1>xat.<br/>com</h1>
     </div>
-
-    <script>
-        function aktifEtAnimeSpace() {
-            // Buraya senin xatimg sitesinden bulduğun kendi anime GIF linkini koydum:
-            const seninAnimeGifiniz = "https://xatimg.com/image/vYGE2RjJUo9C.gif";
-            
-            // Tıklandığı an arka planı tamamen senin anime GIF'in yapar
-            document.body.style.backgroundImage = "url('" + seninAnimeGifiniz + "')";
-        }
-    </script>
 
 </body>
 </html>
