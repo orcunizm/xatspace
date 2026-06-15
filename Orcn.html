@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <title>XatSpace</title>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-        /* Tüm ekranı kaplayan anime GIF arka plan ayarları */
         body {
             margin: 0;
             padding: 0;
-            background-image: url('https://xatimg.com/image/fFPGX21ITsYT.gif'); /* Senin anime GIF linkin */
+            background-image: url('https://xatimg.com/image/fFPGX21ITsYT.gif');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -18,43 +15,9 @@
             height: 100vh;
             overflow: hidden;
         }
-
-        /* Başlık Alanı - Yazıyı ekrana ortalar */
-        .title {
-            font-family: "Montserrat";
-            text-align: center;
-            color: #FFF;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            letter-spacing: 1px;
-            user-select: none;
-            /* Arka plandaki GIF'in daha net seçilebilmesi için yazının arkasına çok hafif şeffaf bir karanlık katman ekler */
-            background: rgba(0, 0, 0, 0.2); 
-        }
-
-        /* İçinde maskeli GIF dönen havalı dev yazı */
-        h1 {
-            background-image: url(https://xatimg.com/image/fFPGX21ITsYT.gif);
-            background-size: cover;
-            color: transparent;
-            -moz-background-clip: text;
-            -webkit-background-clip: text;
-            text-transform: uppercase;
-            font-size: 120px;
-            line-height: .75;
-            margin: 10px 0;
-        }
     </style>
 </head>
 <body>
-
-    <!-- Profilde sadece bu havalı yazı görünecek, avatar veya kutu olmayacak -->
-    <div class="title">
-        <h1>xat.<br/>com</h1>
-    </div>
-
+    <!-- İçeride hiçbir yazı veya h1 etiketi kalmadı, sadece temiz tam ekran arka plan -->
 </body>
 </html>
